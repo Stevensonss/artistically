@@ -1,45 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artistically</title>
-
-    <link rel="stylesheet" href="/css/style.css">
-    <script type="text/JavaScript" async defer src="/js/script.js"></script>
-</head>
+ <?php include 'back/include/head.php' ?>
 <body>
 
-    <nav class="">
-        <div class="nav-mobile">
-            <div class="nav-mobile-layout">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#credit">Cr&eacute;dits</a></li>
-                    <li class="go"><a href="start.php">Start</a></li>
-                </ul>
-            </div>
-            <div class="nav-toggle">
-                <div class=""></div>
-                <div class=""></div>
-                <div class=""></div>
-            </div>
-            <div class="logo-mobile"><img style="height:33px; transform: translateX(-15px);" src="/media/svg/logo.svg" alt="logo-Artistically"></a></div>
-        </div>
-
-        <div>
-            <div class="nav">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#credit">Cr&eacute;dits</a></li>
-                    <li class="go"><a href="start.php">Start</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php require 'back/include/nav.php'; ?>
 
     <div class="header">
 

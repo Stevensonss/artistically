@@ -1,15 +1,9 @@
-<?php
+<?php 
+    include 'back/include/head.php';
+
+    include 'back/include/nav.php'; 
+
     require 'back/functions.php';
+
+    include 'back/include/footer.php';
 ?>
-
-<?php //include header ?>
-
-<?php include 'back/include/nav.php' ?>
-
-<?php //include page ?>
-
-
-
-
-
-<?php include 'back/include/footer.php' ?>

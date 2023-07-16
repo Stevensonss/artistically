@@ -5,18 +5,13 @@ $password = "";
 $dbname = "artistically";
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $db->exec("SET NAMES utf8");
 
-    $query = "SELECT * FROM users"; // Spécifiez le nom de la table ici
-    $result = $conn->query($query);
 
-    // Parcourir les résultats
-    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-        echo $row['column_name'];
-    }
-
-    $conn = null;
+    $db = null;
 } catch(PDOException $e) {
     echo "Erreur de connexion à la base de données : " . $e->getMessage();
 }

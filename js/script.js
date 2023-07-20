@@ -4,8 +4,7 @@ var toggleMenu = document.querySelector('.nav-toggle');
 var toggleMenuFirstLine = document.querySelector('.nav-toggle > div:nth-child(1)');
 var toggleMenuSecondLine = document.querySelector('.nav-toggle > div:nth-child(2)');
 var toggleMenuThirdLine = document.querySelector('.nav-toggle > div:nth-child(3)');
-var navMobileLayout = document.querySelector('.nav-mobile-layout')
-
+var navMobileLayout = document.querySelector('.nav-mobile-layout');
 
 toggleMenu.addEventListener("click", function(){
 
@@ -29,3 +28,21 @@ window.addEventListener('scroll', function() {
     logoMobile.style.opacity = 1; // Afficher l'élément si le seuil de défilement est atteint
   } else {logoMobile.style.opacity = 0;}
 });
+
+
+//sing-in-up
+
+var singInMenu = document.querySelector('.sing-in-up > div > ul > li:nth-child(1)');
+var singUpMenu = document.querySelector('.sing-in-up > div > ul > li:nth-child(2)');
+var singIn = document.querySelector('.sing-in');
+var singUp = document.querySelector('.sing-up');
+
+singInMenu.addEventListener("click", function(){
+  singIn.classList.remove('hidden');
+  singUp.classList.add('hidden');
+}) 
+
+singUpMenu.addEventListener("click", function(){
+  singIn.classList.add('hidden');
+  singUp.classList.remove('hidden');
+}) 

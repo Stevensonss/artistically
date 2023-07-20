@@ -1,17 +1,4 @@
 <?php
-    // Inclure le fichier de configuration
-    require_once 'config.php';
-
-    function getUsers() {
-        global $db;
-    
-        $query = "SELECT * FROM users";
-        $stmt = $db->query($query);
-        $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    
-        return $users;
-    }
-    
     function checkLoggedIn() {
         // Vérifier si l'utilisateur est connecté
         // Code de vérification ici

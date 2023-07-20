@@ -1,6 +1,17 @@
 <!--sing-up-->
-<div>
-    <form action="start.php" method="POST">
+
+
+
+<div class="sing-in-up">
+    <div style="width:200px; position:relative;">
+        <ul style="display:flex; justify-content:space-between;">
+            <li>Sing-in</li>
+            <li>Sing-up</li>
+        </ul>
+    </div>
+
+
+    <form class="sing-up hidden" action="/back/sing.php" method="POST">
     <label for="name">Nom d'utilisateur:</label>
     <input type="text" name="name" id="name" required>
     
@@ -8,7 +19,7 @@
     <input type="email" name="email" id="email" required>
     
     <label for="password">Mot de passe:</label>
-    <input type="password" name="password" id="password" required>
+    <input type="password" name="password" id="password_up" required>
     
     <label for="confirmPassword">Confirmer Mot de passe:</label>
     <input type="password" name="confirmPassword" id="confirmPassword" required>
@@ -30,12 +41,12 @@
 
 
     <!--Sing-in-->
-    <form action="login.php" method="POST">
+    <form class="sing-in" action="/back/sing.php" method="POST">
     <label for="username">Nom d'utilisateur :</label>
     <input type="text" name="username" id="username" required>
     
     <label for="password">Mot de passe :</label>
-    <input type="password" name="password" id="password" required>
+    <input type="password" name="password" id="password_in" required>
     
     <input type="submit" value="Se connecter">
     </form>
